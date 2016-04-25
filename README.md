@@ -10,6 +10,7 @@ So we just deleted the big selenium test suite, because it was no longer providi
 
 Over time we rebuilt a test suite, but it was 90% unit tests. That is, tests that mock things and don't use an external database or other services. We also built out a couple of selenium tests, but only in the super critical paths (for Etsy that meant checkout and user registration). In those places, the maintenance costs for a few tests was worth it, because breakage was expensive.
 
+
 ## More on the original rationale for doing this, and documentation if you must use it
 See here: [PGProxy: A Testing Proxy for Postgres](http://mcfunley.com/469/pgproxy-a-testing-proxy-for-postgres)
 
